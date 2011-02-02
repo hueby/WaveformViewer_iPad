@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* WaveformViewer_iPad */ = {
+		activeExec = 0;
+		executables = (
+			95BDFB1E12F1707200930942 /* WaveformViewer_iPad */,
+		);
+	};
+	28042007108E984D000629CD /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{320, 0}";
+			sepNavVisRange = "{0, 750}";
+		};
+	};
+	28042008108E984D000629CD /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {803, 3172}}";
+			sepNavSelRange = "{1080, 0}";
+			sepNavVisRange = "{453, 1428}";
+			sepNavWindowFrame = "{{-20, 4}, {696, 774}}";
+		};
+	};
+	28042009108E984D000629CD /* DetailViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1063, 583}}";
+			sepNavSelRange = "{453, 0}";
+			sepNavVisRange = "{0, 807}";
+		};
+	};
+	2804200A108E984D000629CD /* DetailViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{695, 305}\";\n            s = 0;\n        },\n                {\n            r = \"{1413, 252}\";\n            s = 0;\n        },\n                {\n            r = \"{1951, 198}\";\n            s = 0;\n        },\n                {\n            r = \"{2420, 17}\";\n            s = 0;\n        },\n                {\n            r = \"{3228, 123}\";\n            s = 0;\n        },\n                {\n            r = \"{3625, 147}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 3780}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1536, 1326}}";
+			sepNavSelRange = "{813, 10}";
+			sepNavVisRange = "{362, 1473}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 95BDFB1E12F1707200930942 /* WaveformViewer_iPad */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* WaveformViewer_iPad */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* WaveformViewer_iPad */,
+		);
+		codeSenseManager = 95BDFB3112F1707A00930942 /* Code sense */;
+		executables = (
+			95BDFB1E12F1707200930942 /* WaveformViewer_iPad */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					787,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 318295570;
+			PBXWorkspaceStateSaveDate = 318295570;
+		};
+		perUserProjectItems = {
+			95BDFD8512F3784000930942 /* PBXTextBookmark */ = 95BDFD8512F3784000930942 /* PBXTextBookmark */;
+			95BDFDFA12F8CE2200930942 /* PBXTextBookmark */ = 95BDFDFA12F8CE2200930942 /* PBXTextBookmark */;
+			95BDFDFB12F8CE2200930942 /* PlistBookmark */ = 95BDFDFB12F8CE2200930942 /* PlistBookmark */;
+			95BDFE0612F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0612F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0712F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0712F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0812F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0812F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0912F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0912F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0A12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0A12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0B12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0B12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0C12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0C12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0D12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0D12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0E12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0E12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE0F12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0F12F8CEF000930942 /* PBXTextBookmark */;
+			95BDFE1012F8CEF000930942 /* PBXBookmark */ = 95BDFE1012F8CEF000930942 /* PBXBookmark */;
+			95BDFE1112F8CEF000930942 /* PBXTextBookmark */ = 95BDFE1112F8CEF000930942 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 95BDFB3012F1707A00930942 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* WaveformViewer_iPad-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 4}, {608, 774}}";
+		};
+	};
+	95BDFB1E12F1707200930942 /* WaveformViewer_iPad */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = WaveformViewer_iPad;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	95BDFB3012F1707A00930942 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	95BDFB3112F1707A00930942 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	95BDFB3912F171F000930942 /* SignalNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 361}";
+		};
+	};
+	95BDFB3A12F171F000930942 /* SignalNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 348}";
+		};
+	};
+	95BDFB3B12F171F000930942 /* VariableNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 599}";
+		};
+	};
+	95BDFB3C12F171F000930942 /* VariableNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 340}";
+		};
+	};
+	95BDFB3D12F171F000930942 /* ModuleNode.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 382}";
+		};
+	};
+	95BDFB3E12F171F000930942 /* ModuleNode.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 275}";
+		};
+	};
+	95BDFB4012F171F000930942 /* Draw2D.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 1911}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 947}";
+		};
+	};
+	95BDFB4512F171F900930942 /* Parser.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {965, 579}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1181}";
+		};
+	};
+	95BDFB4612F171F900930942 /* Parser.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{285, 15}\";\n            s = 0;\n        },\n                {\n            r = \"{958, 93}\";\n            s = 0;\n        },\n                {\n            r = \"{1102, 411}\";\n            s = 0;\n        },\n                {\n            r = \"{1583, 951}\";\n            s = 0;\n        },\n                {\n            r = \"{2582, 677}\";\n            s = 0;\n        },\n                {\n            r = \"{3322, 556}\";\n            s = 0;\n        },\n                {\n            r = \"{3945, 237}\";\n            s = 0;\n        },\n                {\n            r = \"{4253, 2481}\";\n            s = 0;\n        },\n                {\n            r = \"{6815, 2100}\";\n            s = 0;\n        },\n                {\n            r = \"{8980, 408}\";\n            s = 0;\n        },\n                {\n            r = \"{9438, 755}\";\n            s = 0;\n        },\n                {\n            r = \"{10273, 751}\";\n            s = 0;\n        },\n                {\n            r = \"{11044, 727}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 11779}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {621, 949}}";
+			sepNavSelRange = "{323, 0}";
+			sepNavVisRange = "{252, 1352}";
+			sepNavWindowFrame = "{{560, 6}, {680, 772}}";
+		};
+	};
+	95BDFD8512F3784000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042009108E984D000629CD /* DetailViewController.h */;
+		name = "DetailViewController.h: 19";
+		rLen = 0;
+		rLoc = 453;
+		rType = 0;
+		vrLen = 807;
+		vrLoc = 0;
+	};
+	95BDFDFA12F8CE2200930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2804200A108E984D000629CD /* DetailViewController.m */;
+		name = "DetailViewController.m: 47";
+		rLen = 10;
+		rLoc = 1117;
+		rType = 0;
+		vrLen = 2241;
+		vrLoc = 362;
+	};
+	95BDFDFB12F8CE2200930942 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* WaveformViewer_iPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	95BDFE0612F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB4612F171F900930942 /* Parser.m */;
+		name = "Parser.m: 293";
+		rLen = 0;
+		rLoc = 8818;
+		rType = 0;
+		vrLen = 1662;
+		vrLoc = 6624;
+	};
+	95BDFE0712F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042007108E984D000629CD /* RootViewController.h */;
+		name = "RootViewController.h: 15";
+		rLen = 0;
+		rLoc = 320;
+		rType = 0;
+		vrLen = 750;
+		vrLoc = 0;
+	};
+	95BDFE0812F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28042008108E984D000629CD /* RootViewController.m */;
+		name = "RootViewController.m: 47";
+		rLen = 5;
+		rLoc = 1040;
+		rType = 0;
+		vrLen = 1293;
+		vrLoc = 497;
+	};
+	95BDFE0912F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB4512F171F900930942 /* Parser.h */;
+		name = "Parser.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1181;
+		vrLoc = 0;
+	};
+	95BDFE0A12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3912F171F000930942 /* SignalNode.h */;
+		name = "SignalNode.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	95BDFE0B12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3A12F171F000930942 /* SignalNode.m */;
+		name = "SignalNode.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 0;
+	};
+	95BDFE0C12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3B12F171F000930942 /* VariableNode.h */;
+		name = "VariableNode.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 599;
+		vrLoc = 0;
+	};
+	95BDFE0D12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3C12F171F000930942 /* VariableNode.m */;
+		name = "VariableNode.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 340;
+		vrLoc = 0;
+	};
+	95BDFE0E12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3D12F171F000930942 /* ModuleNode.h */;
+		name = "ModuleNode.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 382;
+		vrLoc = 0;
+	};
+	95BDFE0F12F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB3E12F171F000930942 /* ModuleNode.m */;
+		name = "ModuleNode.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 275;
+		vrLoc = 0;
+	};
+	95BDFE1012F8CEF000930942 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 95BDFB4012F171F000930942 /* Draw2D.m */;
+	};
+	95BDFE1112F8CEF000930942 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB4012F171F000930942 /* Draw2D.m */;
+		name = "Draw2D.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 947;
+		vrLoc = 0;
+	};
+}
