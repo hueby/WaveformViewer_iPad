@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
     int retVal = UIApplicationMain(argc, argv, nil, nil);
     //und hier ist meins
+    //321 meins
     [pool release];
     return retVal;
 }
