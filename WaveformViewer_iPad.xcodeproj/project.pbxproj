@@ -20,7 +20,7 @@
 		95BDFB4212F171F000930942 /* VariableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BDFB3C12F171F000930942 /* VariableNode.m */; };
 		95BDFB4312F171F000930942 /* ModuleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BDFB3E12F171F000930942 /* ModuleNode.m */; };
 		95BDFB4412F171F000930942 /* Draw2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BDFB4012F171F000930942 /* Draw2D.m */; };
-		95BDFB4712F171F900930942 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BDFB4612F171F900930942 /* Parser.m */; };
+		CCE1101212FAE80000A35162 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE1101112FAE80000A35162 /* Parser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +47,8 @@
 		95BDFB3E12F171F000930942 /* ModuleNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleNode.m; sourceTree = "<group>"; };
 		95BDFB3F12F171F000930942 /* Draw2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Draw2D.h; sourceTree = "<group>"; };
 		95BDFB4012F171F000930942 /* Draw2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Draw2D.m; sourceTree = "<group>"; };
-		95BDFB4512F171F900930942 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parser.h; path = /Users/dennis/Desktop/Draw_iPad/Classes/Parser.h; sourceTree = "<absolute>"; };
-		95BDFB4612F171F900930942 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Parser.m; path = /Users/dennis/Desktop/Draw_iPad/Classes/Parser.m; sourceTree = "<absolute>"; };
+		CCE1101012FAE80000A35162 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		CCE1101112FAE80000A35162 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CCE1101012FAE80000A35162 /* Parser.h */,
+				CCE1101112FAE80000A35162 /* Parser.m */,
 				95BDFB3912F171F000930942 /* SignalNode.h */,
 				95BDFB3A12F171F000930942 /* SignalNode.m */,
 				95BDFB3B12F171F000930942 /* VariableNode.h */,
@@ -76,8 +78,6 @@
 				95BDFB3E12F171F000930942 /* ModuleNode.m */,
 				95BDFB3F12F171F000930942 /* Draw2D.h */,
 				95BDFB4012F171F000930942 /* Draw2D.m */,
-				95BDFB4512F171F900930942 /* Parser.h */,
-				95BDFB4612F171F900930942 /* Parser.m */,
 				1D3623240D0F684500981E51 /* WaveformViewer_iPadAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WaveformViewer_iPadAppDelegate.m */,
 				28042007108E984D000629CD /* RootViewController.h */,
@@ -207,7 +207,7 @@
 				95BDFB4212F171F000930942 /* VariableNode.m in Sources */,
 				95BDFB4312F171F000930942 /* ModuleNode.m in Sources */,
 				95BDFB4412F171F000930942 /* Draw2D.m in Sources */,
-				95BDFB4712F171F900930942 /* Parser.m in Sources */,
+				CCE1101212FAE80000A35162 /* Parser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

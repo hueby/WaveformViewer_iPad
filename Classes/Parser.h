@@ -7,7 +7,7 @@
 //  
 //	The vcd file is read and converted to a tree in this class.
 //  It gives back a tree with all the information about the wave forms
-//
+//hkhbjn
 
 #import <Foundation/Foundation.h>
 
