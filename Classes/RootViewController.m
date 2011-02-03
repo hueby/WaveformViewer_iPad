@@ -42,7 +42,11 @@
 	*/
 	
 	//NSString *path = @"/var/mobile/Applications/65134CBB-CBD0-4BA6-B6BC-EFB16BBFF600/Draw_iPad.app/simple.vcd";
-	NSString *path = @"/Users/dennis/Downloads/simple.vcd";
+	NSString *path = @"./very_simple.vcd";
+
+	NSData *file = [[NSData alloc] initWithContentsOfFile:path];
+	NSString *contentOfFile = [[NSString alloc] initWithData:file encoding:NSUTF8StringEncoding];
+	NSLog(@"?: %@", contentOfFile);
 	
 	Parser *parse = [[Parser alloc] init];
 	if ([parse parseFile:path]) {
