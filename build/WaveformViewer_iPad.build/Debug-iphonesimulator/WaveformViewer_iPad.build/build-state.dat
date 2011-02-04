@@ -1,11 +1,13 @@
 TWaveformViewer_iPad
 v7
 r0
-t318515529.895570
+t318523669.363081
 cCheck dependencies
 cProcessInfoPlistFile /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/Info.plist WaveformViewer_iPad-Info.plist
 cCompileXIB /Users/iPadLab/Desktop/WaveformViewer_iPad/MainWindow.xib
 cCompileXIB /Users/iPadLab/Desktop/WaveformViewer_iPad/DetailView.xib
+cCpResource build/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd very_simple.vcd
+cCpResource build/Debug-iphonesimulator/WaveformViewer_iPad.app/simple.vcd simple.vcd
 cProcessPCH /var/folders/r8/r8o6BUnGGfyyn5aR6qRHr++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-bdfkksxcinbnzjcbaukqaqxtzavz/WaveformViewer_iPad_Prefix.pch.gch WaveformViewer_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/main.o /Users/iPadLab/Desktop/WaveformViewer_iPad/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/WaveformViewer_iPadAppDelegate.o /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/WaveformViewer_iPadAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -122,30 +124,30 @@ s276
 i"ModuleNode.h"
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.h
-c000000004D4A9C91000000000000049E
-t1296735377
+c000000004D4BF674000000000000049E
+t1296823924
 s1182
 i<Foundation/Foundation.h>
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m
-c000000004D4A9C910000000000002E05
-t1296735377
-s11781
+c000000004D4C112C0000000000002ED4
+t1296830764
+s11988
 i"Parser.h"
 i"ModuleNode.h"
 i"VariableNode.h"
 i"SignalNode.h"
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.h
-c000000004D494F7200000000000002EF
-t1296650098
+c000000004D4BF67400000000000002EF
+t1296823924
 s751
 i<UIKit/UIKit.h>
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m
-c000000004D4AB16F000000000000193D
-t1296740719
-s6461
+c000000004D4C11940000000000001951
+t1296830868
+s6481
 i"RootViewController.h"
 i"DetailViewController.h"
 i"Draw2D.h"
@@ -192,6 +194,11 @@ i"WaveformViewer_iPadAppDelegate.h"
 i"RootViewController.h"
 i"DetailViewController.h"
 
+N/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/very_simple.vcd
+c00000000000000000000000000000000
+t2
+s0
+
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/DetailView.xib
 c000000004D494F72000000000000610C
 t1296650098
@@ -211,11 +218,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app
-t1296822729
-s272
+t1296830869
+s306
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM
-t1296822729
+t1296830869
 s102
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/DetailView.nib
@@ -235,59 +242,68 @@ t1296650098
 s8
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad
-t1296822729
-s60568
+t1296830869
+s60432
+
+N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/simple.vcd
+t1296830821
+s2070
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd
-t1296738782
+t1296827860
 s424
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/DetailViewController.o
-t1296740719
+t1296823924
 s54320
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Draw2D.o
-t1296740719
+t1296823924
 s42628
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/ModuleNode.o
-t1296740719
+t1296823924
 s8552
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o
-t1296740719
-s34616
+t1296830765
+s33388
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o
-t1296740719
-s55732
+t1296830869
+s55672
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/SignalNode.o
-t1296740719
+t1296823924
 s8004
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/VariableNode.o
-t1296740719
+t1296823924
 s11728
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/WaveformViewer_iPad.LinkFileList
-c000000004D4BF1C80000000000000596
-t1296822728
+c000000004D4BF6740000000000000596
+t1296823924
 s1430
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/WaveformViewer_iPadAppDelegate.o
-t1296740719
+t1296823924
 s55188
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/main.o
-t1296822729
+t1296823924
 s6312
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/main.m
-c000000004D4AB1D80000000000000191
-t1296740824
+c000000004D4BF6740000000000000191
+t1296823924
 s401
 i<UIKit/UIKit.h>
+
+N/Users/iPadLab/Desktop/WaveformViewer_iPad/simple.vcd
+c000000004CEE368D0000000000000816
+t1290679949
+s2070
 
 N/Users/iPadLab/Desktop/WaveformViewer_iPad/very_simple.vcd
 c000000004CEE368400000000000001A8
@@ -496,7 +512,7 @@ s1174
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies318515528#318515528#0(0"0(0#1#0"8605439616#0"0#
+lSLF07#2@18"Check dependencies318523668#318523669#0(0"0(0#1#0"8627313888#0"0#
 
 CCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/DetailViewController.o /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/DetailViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s318428440.274620
@@ -590,8 +606,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@56"Compile /Users/dennis/Desktop/Draw_iPad/Classes/Parser.m317910662#317910662#0(0"0(0#0#48"/Users/dennis/Desktop/Draw_iPad/Classes/Parser.m8637790144#2389"    cd /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -include /var/folders/xh/xhUwOQMPFda5b0G2+xUc2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-cuekeqjofpdwpadwtzfqayzkbuig/WaveformViewer_iPad_Prefix.pch -c /Users/dennis/Desktop/Draw_iPad/Classes/Parser.m -o /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o0#
 
 CCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318428440.645062
-e318428440.783523
+s318523565.252931
+e318523565.532162
 r1
 xCompileC
 xbuild/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o
@@ -600,11 +616,13 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@67"Compile /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m318428440#318428440#0(0"0(0#0#59"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m8603908864#2210"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -include /var/folders/r8/r8o6BUnGGfyyn5aR6qRHr++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-bdfkksxcinbnzjcbaukqaqxtzavz/WaveformViewer_iPad_Prefix.pch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o0#
+o/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m:432: warning: incomplete implementation of class 'Parser'
+o/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m:432: warning: method definition for '-checkOnVCDFormat:' not found
+lSLF07#2@67"Compile /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m318523565#318523565#0(245"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m:432: warning: incomplete implementation of class 'Parser'/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m:432: warning: method definition for '-checkOnVCDFormat:' not found2(22@43"Incomplete implementation of class 'Parser'318523565#0#118#0(6@59"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m318523564#432#0#432#0#38"incomplete implementation of class '*'0(22@52"Method definition for '-checkOnVCDFormat:' not found318523565#118#127#0(6@59"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m318523564#432#0#432#0#35"method definition for '*' not found0(0#0#59"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m8629107552#2210"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -include /var/folders/r8/r8o6BUnGGfyyn5aR6qRHr++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-bdfkksxcinbnzjcbaukqaqxtzavz/WaveformViewer_iPad_Prefix.pch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/Parser.m -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/Parser.o0#
 
 CCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s318432755.722963
-e318432756.078566
+s318523668.933724
+e318523669.289216
 r1
 xCompileC
 xbuild/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o
@@ -613,7 +631,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m318432755#318432756#0(0"0(0#0#71"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m8622045504#2234"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -include /var/folders/r8/r8o6BUnGGfyyn5aR6qRHr++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-bdfkksxcinbnzjcbaukqaqxtzavz/WaveformViewer_iPad_Prefix.pch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o0#
+lSLF07#2@79"Compile /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m318523668#318523669#0(0"0(0#0#71"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m8616467744#2234"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -include /var/folders/r8/r8o6BUnGGfyyn5aR6qRHr++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-bdfkksxcinbnzjcbaukqaqxtzavz/WaveformViewer_iPad_Prefix.pch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/RootViewController.m -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o0#
 
 CCompileC build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/RootViewController.o /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s317910595.193800
@@ -754,23 +772,42 @@ xCompileXIB
 x/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/MainWindow.xib
 lSLF07#2@25"CompileXIB MainWindow.xib317813053#317813054#0(0"0(0#0#76"/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/MainWindow.xib8612697568#651"    cd /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/MainWindow.nib /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
+CCpResource build/Debug-iphonesimulator/WaveformViewer_iPad.app/simple.vcd simple.vcd
+s318523621.562812
+e318523621.616087
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/WaveformViewer_iPad.app/simple.vcd
+xsimple.vcd
+lSLF07#2@15"Copy simple.vcd318523621#318523621#0(0"0(0#0#53"/Users/iPadLab/Desktop/WaveformViewer_iPad/simple.vcd8623916992#492"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/iPadLab/Desktop/WaveformViewer_iPad/simple.vcd /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app0#
+
+CCpResource build/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd Classes/very_simple.vcd
+s318520621.196073
+e318520621.216369
+r0
+xCpResource
+xbuild/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd
+xClasses/very_simple.vcd
+opbxcp: very_simple.vcd: No such file or directory
+lSLF07#2@28"Copy Classes/very_simple.vcd318520621#318520621#0(50"pbxcp: very_simple.vcd: No such file or directory1(4@49"pbxcp: very_simple.vcd: No such file or directory318520621#18446744073709551615#0#0(6@0"318520621#0#0#0#0#0"0(0#0#66"/Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/very_simple.vcd8598258752#505"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/iPadLab/Desktop/WaveformViewer_iPad/Classes/very_simple.vcd /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app1#
+
 CCpResource build/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd very_simple.vcd
-s318431582.361182
-e318431582.404610
+s318520660.582194
+e318520660.588389
 r1
 xCpResource
 xbuild/Debug-iphonesimulator/WaveformViewer_iPad.app/very_simple.vcd
 xvery_simple.vcd
-lSLF07#2@20"Copy very_simple.vcd318431582#318431582#0(0"0(0#0#58"/Users/iPadLab/Desktop/WaveformViewer_iPad/very_simple.vcd8622923904#497"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/iPadLab/Desktop/WaveformViewer_iPad/very_simple.vcd /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app0#
+lSLF07#2@20"Copy very_simple.vcd318520660#318520660#0(0"0(0#0#58"/Users/iPadLab/Desktop/WaveformViewer_iPad/very_simple.vcd8617143392#497"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/iPadLab/Desktop/WaveformViewer_iPad/very_simple.vcd /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app0#
 
 CGenerateDSYMFile /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad
-s318515529.767687
-e318515529.891726
+s318523669.334013
+e318523669.358185
 r1
 xGenerateDSYMFile
 x/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM
 x/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad
-lSLF07#2@145"GenerateDSYMFile build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad318515529#318515529#0(0"0(0#0#114"/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad8606799840#431"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM0#
+lSLF07#2@145"GenerateDSYMFile build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad318523669#318523669#0(0"0(0#0#114"/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad8627329120#431"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM0#
 
 CGenerateDSYMFile /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad
 s317910662.525889
@@ -782,14 +819,14 @@ x/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphon
 lSLF07#2@145"GenerateDSYMFile build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad317910662#317910662#0(0"0(0#0#133"/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad8638078656#488"    cd /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad -o /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app.dSYM0#
 
 CLd /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad normal i386
-s318515529.639329
-e318515529.767588
+s318523669.289306
+e318523669.333915
 r1
 xLd
 x/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad
 xnormal
 xi386
-lSLF07#2@119"Link /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad318515529#318515529#0(0"0(0#0#0"8606829536#980"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -filelist /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/WaveformViewer_iPad.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad0#
+lSLF07#2@119"Link /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad318523669#318523669#0(0"0(0#0#0"8627851424#980"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -F/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator -filelist /Users/iPadLab/Desktop/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/Objects-normal/i386/WaveformViewer_iPad.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad0#
 
 CLd /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app/WaveformViewer_iPad normal i386
 s317910662.493334
@@ -840,12 +877,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@41"Precompile WaveformViewer_iPad_Prefix.pch317813054#317813055#0(0"0(0#0#92"/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad_Prefix.pch8632067200#2264"    cd /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-generated-files.hmap -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-own-target-headers.hmap -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-all-target-headers.hmap -iquote /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/WaveformViewer_iPad-project-headers.hmap -F/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/include -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources/i386 -I/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/WaveformViewer_iPad.build/Debug-iphonesimulator/WaveformViewer_iPad.build/DerivedSources -c /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad_Prefix.pch -o /var/folders/xh/xhUwOQMPFda5b0G2+xUc2U+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WaveformViewer_iPad_Prefix-cuekeqjofpdwpadwtzfqayzkbuig/WaveformViewer_iPad_Prefix.pch.gch0#
 
 CTouch /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app
-s318515529.891816
-e318515529.895527
+s318523669.358274
+e318523669.363038
 r1
 xTouch
 x/Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app
-lSLF07#2@100"Touch /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app318515529#318515529#0(0"0(0#0#0"8602902240#298"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app0#
+lSLF07#2@100"Touch /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app318523669#318523669#0(0"0(0#0#0"8627216352#298"    cd /Users/iPadLab/Desktop/WaveformViewer_iPad    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/iPadLab/Desktop/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app0#
 
 CTouch /Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/build/Debug-iphonesimulator/WaveformViewer_iPad.app
 s317910662.554988

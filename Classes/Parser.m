@@ -19,14 +19,18 @@
 	return self;
 }
 
-- (BOOL)parseFile:(NSString*) filePath {
+- (BOOL)parseFile:(NSString*) file {
 	//replacement for constructor
 	BOOL canParse = NO;
+	
 	//check existence of file
-	if ([self getFile:filePath]) {
+	if ([self getFile:file]) {
 		//check if file is a vcd file
-		if ([self checkOnVCDFormat:filePath]) {
-			NSMutableArray* vcdArray = [self convertFileToMutableArray:filePath];
+		//if ([self checkOnVCDFormat:file]) {
+			NSString *fileContent = [[NSString stringWithContentsOfFile:
+											[[NSBundle mainBundle] pathForResource:file ofType:@"vcd"] 
+											encoding:NSUTF8StringEncoding error:nil] retain];
+			NSMutableArray* vcdArray = [self convertFileToMutableArray:fileContent];
 			if (vcdArray != nil) {
 				[self makeTree:vcdArray];
 				canParse = YES;
@@ -36,10 +40,10 @@
 				NSLog(@"Array is already in use.");
 				return canParse;
 			}
-		} else {
-			NSLog(@"Not a vcd file!");
-			return canParse;
-		}
+		//} else {
+		//	NSLog(@"Not a vcd file!");
+		//	return canParse;
+		//}
  
 	} else {
 		NSLog(@"File not found. Aborting.");
@@ -47,13 +51,16 @@
 	}
 }	
 
-- (BOOL)getFile:(NSString*) filePath {
+- (BOOL)getFile:(NSString*) file {
 	//check existence of the file
-	
-	return [[NSFileManager alloc] fileExistsAtPath:filePath];
+	if (!file) {
+		return NO;
+	} else {
+		return YES;
+	}
 }
 
-- (BOOL) checkOnVCDFormat:(NSString*) filePath {
+/*- (BOOL) checkOnVCDFormat:(NSString*) filePath {
 	int countLength = [filePath length];
 	NSString* dataFormat = [[NSString alloc] initWithFormat:@""];
 	for (int i = countLength-1; i > countLength-4; i--) {
@@ -66,17 +73,17 @@
 	} else {
 		return NO;
 	}
-}
+}*/
 
-- (NSMutableArray*)convertFileToMutableArray:(NSString*) filePath {
+- (NSMutableArray*)convertFileToMutableArray:(NSString*) fileContent {
 
-	NSLog(@"Pfad der Datei: %@", filePath);
+	//NSLog(@"Pfad der Datei: %@", filePath);
 	
-	NSString* fileOut = [NSString stringWithContentsOfFile:filePath
-									encoding: NSUTF8StringEncoding
-									error: nil];
+	//NSString* fileOut = [NSString stringWithContentsOfFile:filePath
+	//								encoding: NSUTF8StringEncoding
+	//								error: nil];
 	
-	NSArray* arrayFromFileWithLineIndex = [fileOut componentsSeparatedByString:@"\n"];
+	NSArray* arrayFromFileWithLineIndex = [fileContent componentsSeparatedByString:@"\n"];
 	NSMutableArray* finalArrayLineWords = [[NSMutableArray alloc] initWithCapacity:1];	
 	
 	for (int i = 0; i < [arrayFromFileWithLineIndex count]; i++) {
