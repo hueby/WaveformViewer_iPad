@@ -17,6 +17,10 @@
 	NSMutableArray *signalArray;
 	int count;
 	int countArrayVariables;
+	//test variable declaration
+	//UIImageView		//*beachBall=...;
+	CGPoint touch1;
+	CGPoint touch2;
 }
 
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;

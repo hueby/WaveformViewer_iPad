@@ -222,6 +222,139 @@
     [super dealloc];
 }
 
+#pragma mark uitouch
+
+
+//Handling a single-tap gesture and a double-tap gesture
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+	//  Created by Skylar Cantu on 1/25/09.
+	//  Copyright __MyCompanyName__ 2009. All rights reserved.
+	[super touchesBegan:touches withEvent:event];
+	
+	NSArray *allTouches = [touches allObjects]; 
+	UITouch *touch = [touches anyObject];
+	
+	int count = [allTouches count];
+	
+	if (count == 1) {
+		if ([touch tapCount] < 2) {
+		/*	if (CGRectContainsPoint([/*beachBall*/ /* frame], [[allTouches objectAtIndex:0] locationInView:self.view])) {
+				[UIView beginAnimations:@"TouchDownAnimation" context:NULL];
+				[UIView setAnimationBeginsFromCurrentState:YES];
+				[UIView setAnimationDelegate:self];
+				[UIView setAnimationDidStopSelector:@selector(finishedTouchDownAnimation:finished:context:)];
+				[UIView setAnimationCurve:UIViewAnimationCurveLinear];
+				[UIView setAnimationDuration:0.25];
+				CGAffineTransform transform = CGAffineTransformMakeScale(1.1, 1.1);
+				//beachBall.transform = transform;
+				//beachBall.alpha = 0.85;
+				[UIView commitAnimations];
+			}*/
+		}
+	}
+	
+	if (count > 1) {
+		touch1 = [[allTouches objectAtIndex:0] locationInView:self.view]; 
+		touch2 = [[allTouches objectAtIndex:1] locationInView:self.view];
+		NSLog(@"Multitouch begins");
+	}
+	
+	/*	
+	 if(aTouch.tapCount == 2) {
+	 [NSObject cancelPreviousPerformRequestsWithTarget:self];
+	 NSLog(@"Multitouch begins");
+	 }*/
+}
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+	//  Created by Skylar Cantu on 1/25/09.
+	//  Copyright __MyCompanyName__ 2009. All rights reserved.
+	[super touchesMoved:touches withEvent:event];
+	
+	CGPoint currentTouch1;
+	CGPoint currentTouch2;
+	
+	NSArray *allTouches = [touches allObjects]; 
+	int count = [allTouches count]; 
+	
+	if (count == 1) {
+		/*	if (CGRectContainsPoint([beachBall frame], [[allTouches objectAtIndex:0] locationInView:self.view])) {
+		 beachBall.center = [[allTouches objectAtIndex:0] locationInView:self.view];
+		 return;
+		 }*/
+	}
+	
+	if (count > 1) {
+		/*if ((CGRectContainsPoint([beachBall frame], [[allTouches objectAtIndex:0] locationInView:self.view])) ||
+		 (CGRectContainsPoint([beachBall frame], [[allTouches objectAtIndex:1] locationInView:self.view]))) {
+		 
+		 currentTouch1 = [[allTouches objectAtIndex:0] locationInView:self.view]; 
+		 currentTouch2 = [[allTouches objectAtIndex:1] locationInView:self.view];
+		 
+		 CGFloat previousAngle = atan2(touch2.y - touch1.y, touch2.x - touch1.x) * 180 / M_PI;
+		 CGFloat currentAngle = atan2(currentTouch2.y - currentTouch1.y,currentTouch2.x - currentTouch1.x) * 180 / M_PI;
+		 
+		 CGFloat angleToRotate = currentAngle - previousAngle;
+		 
+		 CGAffineTransform transform = CGAffineTransformRotate(beachBall.transform, degreesToRadians(angleToRotate));
+		 
+		 beachBall.transform = transform;
+		 touch1 = currentTouch1;
+		 touch2 = currentTouch2;
+		 }*/
+		
+	}
+}
+
+
+
+-(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+	UITouch *theTouch = [touches anyObject];
+	if (theTouch.tapCount == 1) {
+		NSDictionary *touchLoc = [NSDictionary dictionaryWithObject:[NSValue valueWithCGPoint:[theTouch locationInView:self]] forKey:@"location"];
+		[self performSelector: @selector(handleSingleTap:) withObject:touchLoc afterDelay:0.3];
+	}else if (theTouch.tapCount == 2) {
+		// Double-tap: increase image size by 10%
+		/*CGRect myFrame = self.frame;
+		myFrame.size.width *= self.frame.size.width * 0.1;
+		myFrame.size.height *= self.frame.size.height * 0.1;
+		myFrame.origin.x -= (self.frame.origin.x * 0.1) / 2.0;
+		myFrame.origin.y -= (self.frame.origin.y * 0.1) / 2.0;
+		*/[UIView beginAnimations:nil context:NULL];
+		//[self setFrame:myFrame];
+		[UIView commitAnimations];
+	}
+	
+	
+	
+	for (UITouch *touch in touches) {
+		//if (touch.tapCount = 2) {
+		//draw vertical line between the 2 touches
+		
+		//}
+		if (touch.tapCount >= 2) {
+			//[self.superview bringSubviewToFront:self];
+		}
+	}
+}
+
+- (void) handleSingleTap:(NSDictionary *)touches{
+	// Single-tap: decreas image size by 10%
+	/*CGRect myFrame = self.frame;
+	myFrame.size.width -= self.frame.size.width * 0.1;
+	myFrame.size.height -= self.frame.size.height * 0.1;
+	myFrame.origin.x += (self.frame.origin.x * 0.1) / 2.0;
+	myFrame.origin.y += (self.frame.origin.y * 0.1) / 2.0;
+	*/[UIView beginAnimations:nil context:NULL];
+	//[self setFrame:myFrame];
+	[UIView commitAnimations];
+}
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+	// no state to clean up, so null implementation
+}
+
+
 
 @end
 
