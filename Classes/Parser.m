@@ -22,29 +22,22 @@
 - (BOOL)parseFile:(NSString*) file {
 	//replacement for constructor
 	BOOL canParse = NO;
-	NSLog(@"des is file: %@", file);
-	//check existence of file
-	if ([self getFile:file]) {
-		//check if file is a vcd file
-		//if ([self checkOnVCDFormat:file]) {
-			NSString *fileContent = [[NSString stringWithContentsOfFile:
-											[[NSBundle mainBundle] pathForResource:file ofType:@"vcd"] 
-											encoding:NSUTF8StringEncoding error:nil] retain];
-			NSMutableArray* vcdArray = [self convertFileToMutableArray:fileContent];
-			if (vcdArray != nil) {
-				[self makeTree:vcdArray];
-				canParse = YES;
-				return canParse;
+	NSString *fileContent = [[NSString stringWithContentsOfFile:
+								[[NSBundle mainBundle] pathForResource:file ofType:@"vcd"] 
+								encoding:NSUTF8StringEncoding error:nil] retain];
 
-			} else {
-				NSLog(@"Array is already in use.");
-				return canParse;
-			}
-		//} else {
-		//	NSLog(@"Not a vcd file!");
-		//	return canParse;
-		//}
- 
+	//check existence of file
+	if (fileContent) {
+		//check if file is a vcd file			
+		NSMutableArray* vcdArray = [self convertFileToMutableArray:fileContent];
+		if (vcdArray != nil) {
+			[self makeTree:vcdArray];
+			canParse = YES;
+			return canParse;
+		} else {
+			NSLog(@"Array is already in use.");
+			return canParse;
+		}
 	} else {
 		NSLog(@"File not found. Aborting.");
 		return canParse;
@@ -289,16 +282,12 @@
 					//getting string in line
 					NSString* stringAtTarget = [[vcdArray objectAtIndex:counterL] objectAtIndex:i];
 					//cut off the intvalue
-					
-					NSLog(@"%@", stringAtTarget);
-					
+										
 					NSInteger signal = [[NSString stringWithFormat:@"%c", [stringAtTarget characterAtIndex:0]] integerValue];
 					//cut off the symbol
 					NSString* symbol = [NSString stringWithFormat:@"%c", [stringAtTarget characterAtIndex:1]];
 					//add it to variable
-					
-					NSLog(@"signal: %i und symbol: %@", signal, symbol);
-					
+									
 					[self addSignalToDB:signal :symbol];
 				}
 			
