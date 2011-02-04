@@ -70,13 +70,15 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 318295570;
-			PBXWorkspaceStateSaveDate = 318295570;
+			PBXPerProjectTemplateStateSaveDate = 318515550;
+			PBXWorkspaceStateSaveDate = 318515550;
 		};
 		perUserProjectItems = {
+			9566EE9F12FC39F60088F4AF /* PBXTextBookmark */ = 9566EE9F12FC39F60088F4AF /* PBXTextBookmark */;
+			9566EEA312FC39FE0088F4AF /* PlistBookmark */ = 9566EEA312FC39FE0088F4AF /* PlistBookmark */;
+			9566EEA412FC4BF40088F4AF /* PlistBookmark */ = 9566EEA412FC4BF40088F4AF /* PlistBookmark */;
 			95BDFD8512F3784000930942 /* PBXTextBookmark */ = 95BDFD8512F3784000930942 /* PBXTextBookmark */;
 			95BDFDFA12F8CE2200930942 /* PBXTextBookmark */ = 95BDFDFA12F8CE2200930942 /* PBXTextBookmark */;
-			95BDFDFB12F8CE2200930942 /* PlistBookmark */ = 95BDFDFB12F8CE2200930942 /* PlistBookmark */;
 			95BDFE0612F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0612F8CEF000930942 /* PBXTextBookmark */;
 			95BDFE0712F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0712F8CEF000930942 /* PBXTextBookmark */;
 			95BDFE0812F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0812F8CEF000930942 /* PBXTextBookmark */;
@@ -87,8 +89,6 @@
 			95BDFE0D12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0D12F8CEF000930942 /* PBXTextBookmark */;
 			95BDFE0E12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0E12F8CEF000930942 /* PBXTextBookmark */;
 			95BDFE0F12F8CEF000930942 /* PBXTextBookmark */ = 95BDFE0F12F8CEF000930942 /* PBXTextBookmark */;
-			95BDFE1012F8CEF000930942 /* PBXBookmark */ = 95BDFE1012F8CEF000930942 /* PBXBookmark */;
-			95BDFE1112F8CEF000930942 /* PBXTextBookmark */ = 95BDFE1112F8CEF000930942 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 95BDFB3012F1707A00930942 /* Source Control */;
 		userBuildSettings = {
@@ -98,6 +98,38 @@
 		uiCtxt = {
 			sepNavWindowFrame = "{{15, 4}, {608, 774}}";
 		};
+	};
+	9566EE9F12FC39F60088F4AF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 95BDFB4012F171F000930942 /* Draw2D.m */;
+		name = "Draw2D.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 891;
+		vrLoc = 0;
+	};
+	9566EEA312FC39FE0088F4AF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* WaveformViewer_iPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	9566EEA412FC4BF40088F4AF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* WaveformViewer_iPad-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
 	};
 	95BDFB1E12F1707200930942 /* WaveformViewer_iPad */ = {
 		isa = PBXExecutable;
@@ -187,9 +219,9 @@
 	};
 	95BDFB4012F171F000930942 /* Draw2D.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {965, 1911}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 1937}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 947}";
+			sepNavVisRange = "{0, 253}";
 		};
 	};
 	95BDFB4512F171F900930942 /* Parser.h */ = {
@@ -227,17 +259,6 @@
 		rType = 0;
 		vrLen = 2241;
 		vrLoc = 362;
-	};
-	95BDFDFB12F8CE2200930942 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* WaveformViewer_iPad-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
 	};
 	95BDFE0612F8CEF000930942 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -337,20 +358,6 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 275;
-		vrLoc = 0;
-	};
-	95BDFE1012F8CEF000930942 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 95BDFB4012F171F000930942 /* Draw2D.m */;
-	};
-	95BDFE1112F8CEF000930942 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 95BDFB4012F171F000930942 /* Draw2D.m */;
-		name = "Draw2D.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 947;
 		vrLoc = 0;
 	};
 }
