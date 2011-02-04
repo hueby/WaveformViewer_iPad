@@ -41,11 +41,14 @@
 	[scroller setContentSize:CGSizeMake(screensize_width, screensize_height)];
 	*/
 	
-	//NSString *path = @"/var/mobile/Applications/65134CBB-CBD0-4BA6-B6BC-EFB16BBFF600/Draw_iPad.app/simple.vcd";
-	NSString *path = @"/Users/dennis/Downloads/simple.vcd";
+	//NSString *path = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"very_simple" ofType:@"vcd"]] retain];
 	
+	NSString *file = @"simple";
+	
+	NSLog(@"%@", file);
+
 	Parser *parse = [[Parser alloc] init];
-	if ([parse parseFile:path]) {
+	if ([parse parseFile:file]) {
 		//[self setSignalArray:[parse searchForSymbolInDatastructure:@"$"]];
 		[self setModuleArray:[parse data]];
 		//[self setVariableArray:[[moduleArray objectAtIndex:0] variables]];

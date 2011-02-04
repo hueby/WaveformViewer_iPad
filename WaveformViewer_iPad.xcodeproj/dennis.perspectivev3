@@ -234,8 +234,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -278,8 +276,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>22</integer>
-									<integer>19</integer>
+									<integer>15</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -312,12 +310,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>95BDFB2A12F1707A00930942</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WaveformViewer_iPad-Info.plist</string>
+								<string>RootViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,18 +325,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>95BDFB2B12F1707A00930942</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WaveformViewer_iPad-Info.plist</string>
+										<string>RootViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9566EEA412FC4BF40088F4AF</string>
+										<string>9515E36E12FC4D750041F60B</string>
 										<key>history</key>
 										<array>
 											<string>95BDFD8512F3784000930942</string>
 											<string>95BDFDFA12F8CE2200930942</string>
 											<string>95BDFE0612F8CEF000930942</string>
 											<string>95BDFE0712F8CEF000930942</string>
-											<string>95BDFE0812F8CEF000930942</string>
 											<string>95BDFE0912F8CEF000930942</string>
 											<string>95BDFE0A12F8CEF000930942</string>
 											<string>95BDFE0B12F8CEF000930942</string>
@@ -345,7 +344,9 @@
 											<string>95BDFE0E12F8CEF000930942</string>
 											<string>95BDFE0F12F8CEF000930942</string>
 											<string>9566EE9F12FC39F60088F4AF</string>
-											<string>9566EEA312FC39FE0088F4AF</string>
+											<string>9515E34112FC4CFF0041F60B</string>
+											<string>9515E36812FC4D6B0041F60B</string>
+											<string>9515E36D12FC4D6F0041F60B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -359,18 +360,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1026, 609}}</string>
+								<string>{{0, 0}, {1026, 607}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 43 1280 735 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>609pt</string>
+							<string>607pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>80pt</string>
+							<string>82pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -384,9 +385,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1026, 53}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 43 1280 735 0 0 1280 778 </string>
+										<string>{{10, 27}, {1026, 55}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -440,7 +439,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {1000, 63}}</string>
+										<string>{{10, 27}, {1026, 55}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 43 1280 735 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -468,11 +469,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>9566EE9412FC29600088F4AF</string>
+				<string>9515E34512FC4CFF0041F60B</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>9566EE9512FC29600088F4AF</string>
+				<string>9515E34612FC4CFF0041F60B</string>
 				<string>95BDFB2A12F1707A00930942</string>
-				<string>9566EE9612FC29600088F4AF</string>
+				<string>9515E34712FC4CFF0041F60B</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -622,13 +623,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>9566EE9712FC29600088F4AF</string>
+				<string>9515E34812FC4CFF0041F60B</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>9566EE9812FC29600088F4AF</string>
-				<string>9566EE9912FC29600088F4AF</string>
-				<string>9566EE9A12FC29600088F4AF</string>
-				<string>9566EE9B12FC29600088F4AF</string>
+				<string>9515E34912FC4CFF0041F60B</string>
+				<string>9515E34A12FC4CFF0041F60B</string>
+				<string>9515E34B12FC4CFF0041F60B</string>
+				<string>9515E34C12FC4CFF0041F60B</string>
 				<string>95BDFB2A12F1707A00930942</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
@@ -663,7 +664,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C530D5B069F1CE1000CFCEE</string>
 		<string>/Volumes/HDD/Users/dennis/Documents/xcode/WaveformViewer_iPad/WaveformViewer_iPad.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
