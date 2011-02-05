@@ -21,7 +21,7 @@
     id detailItem;
     UILabel *detailDescriptionLabel;
 	
-	int count;
+	int countVariables;
 	int countArrayVariables;
 	int viewCount;
 }

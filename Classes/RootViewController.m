@@ -31,29 +31,15 @@
 - (void)viewDidLoad {
     count = 0;
 	countArrayVariables = 0;
-		NSLog(@"viewDidLoad in RVC");
 
-	/*
-	CGFloat screensize_width = 2048;
-	CGFloat screensize_height = 768;
-	[tbl setFrame:CGRectMake(0, 0, screensize_width, screensize_height)];
-	
-	//TODO make this dynamic..
-	[scroller setContentSize:CGSizeMake(screensize_width, screensize_height)];
-	*/
-	
-	//NSString *path = [[NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"very_simple" ofType:@"vcd"]] retain];
-	
-	NSString *file = @"very_simple";
+	NSString *file = @"simple";
 	
 	NSLog(@"%@", file);
 
 	Parser *parse = [[Parser alloc] init];
 	if ([parse parseFile:file]) {
-		//[self setSignalArray:[parse searchForSymbolInDatastructure:@"$"]];
 		[detailViewController setData:[parse data]];
 		[self setModuleArray:[parse data]];
-		//[self setVariableArray:[[moduleArray objectAtIndex:0] variables]];
 	} else {
 		NSLog(@"FAIL");
 	}

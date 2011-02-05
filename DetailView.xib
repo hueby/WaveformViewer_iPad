@@ -44,13 +44,13 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIScrollView" id="435375264">
 						<reference key="NSNextResponder" ref="647120888"/>
-						<int key="NSvFlags">268</int>
+						<int key="NSvFlags">307</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUITableView" id="65273482">
 								<reference key="NSNextResponder" ref="435375264"/>
 								<int key="NSvFlags">274</int>
-								<string key="NSFrameSize">{3072, 768}</string>
+								<string key="NSFrame">{{20, 20}, {3072, 768}}</string>
 								<reference key="NSSuperview" ref="435375264"/>
 								<object class="NSColor" key="IBUIBackgroundColor" id="33107367">
 									<int key="NSColorSpace">3</int>
@@ -67,7 +67,7 @@
 								<float key="IBUISectionFooterHeight">22</float>
 							</object>
 						</object>
-						<string key="NSFrame">{{0, 22}, {2048, 768}}</string>
+						<string key="NSFrame">{{0, 2}, {2048, 768}}</string>
 						<reference key="NSSuperview" ref="647120888"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -273,9 +273,9 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAxEqAAA</bytes>
+						<bytes key="NSTransformStruct">AQAAAABBsAAAA</bytes>
 					</object>
-					<string>{{333, 4}, {1024, 768}}</string>
+					<string>{{328, 0}, {1024, 768}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -299,7 +299,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">83</int>
+			<int key="maxID">85</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

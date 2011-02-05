@@ -20,7 +20,6 @@
 @end
 
 
-
 @implementation DetailViewController
 
 @synthesize toolbar, popoverController, detailItem, detailDescriptionLabel, scroller, tbl, data, toolbarLabel;
@@ -93,22 +92,15 @@
 
  // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	NSLog(@"viewDidLoad in DVC");
 	CGFloat screensize_width = 2048;
-	CGFloat screensize_height = 768;
+	CGFloat screensize_height = 1024;
 	
-	[tbl setFrame:CGRectMake(0, 0, screensize_width, screensize_height)];
-	NSLog(@"tbl set");
+	[tbl setFrame:CGRectMake(0, 22, screensize_width, screensize_height)];
 	[scroller setContentSize:CGSizeMake(screensize_width, screensize_height)];
-	NSLog(@"scroller set");
-	//if (data != nil) {
-		[toolbarLabel setText:[[data objectAtIndex:0] name]];
-		NSLog(@"%@", [[data objectAtIndex:0] name]);
 
-	//}
+	[toolbarLabel setText:[[data objectAtIndex:0] name]];
+
 	[super viewDidLoad];
-
-
 }
  
 
@@ -144,7 +136,6 @@
 #pragma mark Table View management
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	NSLog(@"XD");
 	return [data count];
 }
 
@@ -159,18 +150,18 @@
 		for (int i = 0; i < [[[data objectAtIndex:modulePosition] variables] count]; i++) {
 			counter++;
 			if ([[[[data objectAtIndex:modulePosition] variables] objectAtIndex:i] varArray]) {
-				for (int y = 0; y < [[[[[data objectAtIndex:modulePosition] variables] objectAtIndex:i] varArray] count]; y++) {
-					counter++;
-				}
+				//for (int y = 0; y < [[[[[data objectAtIndex:modulePosition] variables] objectAtIndex:i] varArray] count]; y++) {
+				//	counter++;
+				//}
 			}
 		}
 		NSLog(@"numberOfRows: %i", counter);
-		return counter-1;
+		return counter;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath: (NSIndexPath *)indexPath {
 	int modulePosition = 0;
-	BOOL arrayVariableIsFinished = NO;
+	//BOOL arrayVariableIsFinished = NO;
 		
 	static NSString *CellIdentifier = @"Cell";
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; 
@@ -178,47 +169,72 @@
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease]; 
 		
 		NSMutableArray* varArray = [[data objectAtIndex:modulePosition] variables];
-		VariableNode* variable = [varArray objectAtIndex:count];
+		VariableNode* variable = [varArray objectAtIndex:countVariables];
 		
-		NSLog(@"Versuche Variable %@ mit Symbol %@ zu zeichnen", [variable varName], [variable symbol]);
+		if([variable signals]) {
+			NSLog(@"hier true");
+			Draw2D *drawSignal = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+			
+			NSMutableArray *collectedSignal = [[NSMutableArray alloc] initWithCapacity:1];
+			[collectedSignal addObject:[variable signals]];
+			
+			[drawSignal setSignals:collectedSignal];
+			[drawSignal setNameOfSignal:[variable varName]];
+			[cell setBackgroundView:drawSignal];
+			countVariables++;
 		
+		} else {
+		
+			NSLog(@"hier false");
+			
+			Draw2D *drawSignal = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+			NSLog(@"%@", [variable varName]);
+			//AV = ArrayVariable
+			NSMutableArray *collectedAVSignals = [[NSMutableArray alloc] initWithCapacity:1];
+			for(countArrayVariables = 0; countArrayVariables < [[variable varArray] count]; countArrayVariables++) {
+				[collectedAVSignals addObject:[[[variable varArray] objectAtIndex:countArrayVariables] signals]];
+			}
+			
+			[drawSignal setSignals:collectedAVSignals];
+			[cell setBackgroundView:drawSignal];
+			countVariables++;
+
+		}
+
+		
+		
+		/*
 		if ([variable varArray] == nil) {
 			//mache was fuer normale variablen
 			
 			if (count < [varArray count]) {
 				
 				Draw2D* draw = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-				
-				NSLog(@"ZEICHNE Variable %@ mit Symbol%@", [variable varName], [variable symbol]);
-				
+								
 				[draw setSignals:[variable signals]];
 				[draw setNameOfSignal:[variable varName]];
 				
 				[cell setBackgroundView:draw];
 				
 				count++;
-				NSLog(@"drew auf yes");
 			}
 		} else {
 			//mache was fuer array variablen
+			NSLog(@"was fuer AVs");
 			NSMutableArray* arrayVariableArray = [variable varArray];
 			if ([variable symbol] == nil) {
 				
-				NSLog(@"Versuche AVariable %@ mit Symbol %@ zu zeichnen", [variable varName], [variable symbol]);
-
 				if (countArrayVariables < [arrayVariableArray count] && arrayVariableArray) {
-					VariableNode* arrayVariable = [arrayVariableArray objectAtIndex:countArrayVariables];
-
+					
 					Draw2D* draw = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-				
-					NSLog(@"ZEICHNE Variable %@ mit Symbol%@", [arrayVariable varName], [arrayVariable symbol]);
-
-					[draw setSignals:[arrayVariable signals]];
-					[draw setNameOfSignal:[arrayVariable varName]];
-				
+					for (int i = 0; i < [arrayVariableArray count]; i++) { 						
+						VariableNode* arrayVariable = [arrayVariableArray objectAtIndex:i];
+						[draw setSignals:[arrayVariable signals]];
+						[draw setNameOfSignal:[arrayVariable varName]];
+						NSLog(@"%@ und %i", [arrayVariable varName], [arrayVariableArray count]);
+						//countArrayVariables++;
+					}
 					[cell setBackgroundView:draw];
-					countArrayVariables++;
-
 				} else {
 					countArrayVariables = 0;
 					arrayVariableIsFinished = YES;
@@ -229,63 +245,7 @@
 		if (arrayVariableIsFinished) {
 			count++;
 		}
-		
-		/*
-		if (moduleArray != nil && count < [[[moduleArray objectAtIndex:modulePosition] variables] count]) {
-			
-			Draw2D* draw = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-			Draw2D* drawSelected = [[Draw2D alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-	
-			NSLog(@"VarName der variable: %@",[[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] varName]);
-
-			if ([[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] signals]) {
-				NSLog(@"in der if");
-				[draw setSignals:[[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] signals]];
-				[drawSelected setSignals:[[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] signals]];
-				
-				[cell drawRect:CGRectMake(0, 0, 0, 0)];
-				
-				[cell setBackgroundView:draw];
-				[cell setSelectedBackgroundView:drawSelected];
-				count++;
-				NSLog(@"count in if: %i", count);
-			} else {	
-				NSLog(@"in der else");
-				//NSMutableArray * varArrayFromVariableNode = [variable varArray];
-				if (countArrayVariables < [[[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] varArray] count]) { 
-					
-					NSLog(@"countArrayVariables %i und Laenge von varArray %i", countArrayVariables, [[[[[moduleArray objectAtIndex:modulePosition] 
-																											variables] objectAtIndex:count] 
-																											varArray] count]);
-					
-					VariableNode *arrayVariable = [[[[[moduleArray objectAtIndex:modulePosition] variables] objectAtIndex:count] 
-														varArray] objectAtIndex:countArrayVariables];
-			
-					[draw setSignals:[arrayVariable signals]];
-					[drawSelected setSignals:[arrayVariable signals]];
-					
-					[cell drawRect:CGRectMake(0, 0, 0, 0)];
-
-					[cell setBackgroundView:draw];
-					[cell setSelectedBackgroundView:drawSelected];
-					countArrayVariables++;
-					NSLog(@"count in if unten: %i", countArrayVariables);
-
-					
-				} else {
-					NSLog(@"hier ist %i und count = %i", countArrayVariables, count);
-					countArrayVariables = 0;
-					NSLog(@"UND DANN IST DER COUNTER 0");
-					count++;
-				}
-				NSLog(@"ganz unten");
-			}
-		} else {
-			[cell setText:@"Array empty.."];
-			//cell.selectedBackgroundView = [[[Draw2D alloc] init] autorelease]; 
-		}
 		*/
-		
 		[[cell backgroundView] setBackgroundColor:[UIColor whiteColor]];
 		[[cell selectedBackgroundView] setBackgroundColor:[UIColor orangeColor]];
 		
