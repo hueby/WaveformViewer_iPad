@@ -22,7 +22,6 @@
 - (id) init;
 - (BOOL) parseFile:(NSString*) filePath;
 - (BOOL) getFile:(NSString*) filePath;
-- (BOOL) checkOnVCDFormat:(NSString*) filePath;
 - (NSMutableArray*) convertFileToMutableArray:(NSString*) filePath;
 - (void) makeTree:(NSMutableArray*)vcdArray;
 

@@ -53,21 +53,6 @@
 	}
 }
 
-/*- (BOOL) checkOnVCDFormat:(NSString*) filePath {
-	int countLength = [filePath length];
-	NSString* dataFormat = [[NSString alloc] initWithFormat:@""];
-	for (int i = countLength-1; i > countLength-4; i--) {
-		unichar newCharacter = [filePath characterAtIndex:i];
-		NSString* newString = [[NSString alloc] initWithFormat:@"%c%@", newCharacter, dataFormat];
-		dataFormat = newString;
-	}
-	if ([dataFormat isEqual:@"vcd"]) {
-		return YES;
-	} else {
-		return NO;
-	}
-}*/
-
 - (NSMutableArray*)convertFileToMutableArray:(NSString*) fileContent {
 
 	//NSLog(@"Pfad der Datei: %@", filePath);
@@ -399,23 +384,6 @@
 		}
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
+}
 
 @end
